@@ -10,7 +10,7 @@ export class TgmLeafletTileLayer extends L.TileLayer {
 
         const tileUrl = 'https://maps.targomo.com/styles/' +
             tgmClient.basemaps.basemapsLookup[basemapName] +
-            '/rendered/{z}/{x}/{y}.png?key=' +
+            '/rendered/{z}/{x}/{y}{r}.png?key=' +
             tgmClient.serviceKey;
 
         super(tileUrl , options);
